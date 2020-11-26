@@ -5,7 +5,7 @@
     display: inline-block;
     border: solid 2px black;
     position: absolute;
-  
+    box-sizing: border-box;
   }
   .movable-area {
     width: 100%;
