@@ -1,10 +1,11 @@
 <div class="page-container">
   <label for="speed-input">Enter transition speed (s): </label>
   <input type="number" [(ngModel)]="speed" name="speed-input">
-  <div class="movable-area" (click)="onClick($event)">
+  <div class="movable-area">
     <div class="square" [ngStyle]="{
       'left': squareX+'px', 
       'top': squareY+'px', 
       'transition': 'all ' + speed + 's'}"></div>
+    <div class="overlay" (click)="onClick($event)"></div>
   </div>
 </div>
